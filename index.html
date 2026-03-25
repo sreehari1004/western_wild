@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Western Wild Cafe</title>
+  <meta name="description" content="Fed by fire. Ruled by flavor. Experience the best Wild West themed restaurant.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-sticky">
+      <canvas id="hero-canvas"></canvas>
+      <div id="hero-text">
+        <h1>WESTERN WILD CAFE</h1>
+        <p>Fed by fire. Ruled by flavor.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <main id="menu-section">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <div id="menu-container"></div>
+    </div>
+  </main>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="cart-hidden">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="close-cart">&times;</button>
+    </div>
+    <div id="cart-items">
+      <!-- Items inject here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-price">₹0</span>
+      </div>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+  <div id="cart-overlay"></div>
+
+  <!-- Floating Cart Icon -->
+  <div id="cart-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="21" r="1"></circle>
+      <circle cx="20" cy="21" r="1"></circle>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+    </svg>
+    <span id="cart-badge">0</span>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>Western Wild Cafe</h3>
+        <p>Open Hours: 12 PM - 2 AM</p>
+        <p>Address: Thattil Arcade, Puliparamb, Kalathode, Thrissur, Kerala 680655</p>
+      </div>
+      <div class="footer-socials">
+        <!-- Placeholders for Instagram and Swiggy -->
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="#" class="social-icon swiggy-icon" aria-label="Swiggy">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 22h20L12 2z"></path></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Western Wild Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
